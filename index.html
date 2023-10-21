@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love U</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            /* Mengubah latar belakang menjadi hitam */
+        }
+
+        .heart {
+            position: relative;
+            color: red;
+            font-size: 300px;
+            /* Memperbesar ukuran jantung */
+            animation: heartbeat 1s ease infinite;
+            cursor: pointer;
+            /* Mengubah kursor menjadi pointer saat diarahkan ke jantung */
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="greetings">
+        <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+        <span>H</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>o</span>
+        <span>&nbsp;</span>
+        <span>C</span>
+        <span>a</span>
+        <span>n</span>
+        <span>t</span>
+        <span>i</span>
+        <span>k</span>
+        <span>&nbsp;</span>
+        <span>K</span>
+        <span>u</span>
+    </div>
+
+    <div class="heart" onclick="redirectToOtherPage()">❤️</div>
+
+    <div class="description">
+        <span>Ciee ada yang ulang tahun nihh. Ku ada sesuatu untukmuu hehehe, klik dong jantungnya :)</span>
+    </div>
+
+    <script>
+        function redirectToOtherPage() {
+            window.location.href = "ucapan.html"; // Nama file yang ingin Anda arahkan
+        }
+    </script>
+</body>
+
+</html>
